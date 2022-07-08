@@ -1,0 +1,164 @@
+/* body{
+    background-image: url("../images/chalk-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: ;
+} */
+
+.registration-form{
+    padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+color:white;
+
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.form-input{
+   
+    margin-bottom: 16px;
+    display: block;
+    margin-right: 15px;
+    width: 200px ;
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px ;
+   
+}
+
+.form-label{
+    color:#BADA55;
+    display:block;
+text-align: left;
+}
+
+.form-button{
+    position:relative;
+    padding: 16px 24px;
+    background-color: rgb(106, 52, 144);
+    color: white;
+    border: 1px solid  rgb(106, 52, 144);
+    width: 120px;
+    border-radius: 3px;
+    transition: 0.5s all;
+    left:5px;
+    
+}
+
+.form-button:hover{
+    opacity: 0.9;
+}
+
+.success-message{
+    letter-spacing: 1.5px;
+    padding: 12px 24px;
+    background-color: rgb(106, 52, 144,1);
+    color: #BADA55;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+input[type="radio"]{
+   margin: 0px 10px;
+}
+
+.logo-section{
+    background-color:rgb(17, 33, 63) ;
+}
+
+.form-background-image{
+    background-image: url(../images/blur-chalk.png);
+  
+}
+
+.skill-style{
+    color:white;
+}
+
+.title-section{
+    background-color: rgb(106, 52, 144,1);
+    color:white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: larger;
+    font-family: Arial,Helvetica,sans-serif;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#brooklyn-footer{
+    color:white;  
+    letter-spacing: 3px;
+    font-size: 9px;
+}
+
+#gymnastics-footer{
+    letter-spacing: 3px;
+    color:white;
+}
+
+#gotham-footer{
+    font-weight: lighter;
+    color:white;  
+    letter-spacing: 3px;
+    font-size: 9px;
+   margin-right: 10px;
+}
+
+#trademark{
+    color:white;
+}
+
+
+@media screen and (max-width:500px){
+  
+
+
+.form-input{
+ 
+    width: 80px ;
+    margin-top: 5px;
+    padding: 15px 10x;
+    font-size: 9.5px;
+
+}
+
+.form-label{
+   color:#BADA55;
+   font-size:12px;  
+}
+
+
+  }
+
+  @media screen and (max-width:320px) {
+
+    .input-container{
+        display: flex;
+flex-direction: column;
+    }
+
+    .form-label{
+       color:#BADA55;
+       text-align: center;
+    }
+    .form-input{
+        width: 120px;
+        align-items: center;
+    }
+  }
+
+  
+  

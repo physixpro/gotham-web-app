@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  gotham-backend:
+    build: gotham-backend
+  
+    volumes:
+      - ./gotham-backend:/backend
+    environment:
+      - NODE_ENV=development
+     
+    ports:
+      - "5000:5000"
+
+  gotham-frontend:
+    build: gotham-frontend
+    volumes:
+      - ./gotham-frontend:/frontend
+      - node-modules:/frontend/node_modules
+    environment:
+      - NODE_ENV=development
+     
+    ports:
+      - "8000:8000"
+    depends_on:
+      - gotham-backend
+
+volumes:
+  node-modules:
